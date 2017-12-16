@@ -4,7 +4,7 @@ REPOREVISION=2.7.2
 
 function repo2repo {
   docker pull $REPO/"$1":"$2"
-  docker tag $REPO/"$1":"$2" localhost:5000/k8s-$REPOREVISION/"$1":"$2"
+  docker tag $REPO/"$1":"$2" localhost:5000/helm-$REPOREVISION/"$1":"$2"
   docker push localhost:5000/helm-$REPOREVISION/"$1":"$2"
 }
 
