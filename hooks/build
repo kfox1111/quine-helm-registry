@@ -2,6 +2,8 @@
 
 REPOREVISION=2.7.2
 
+export REGNAME=helm-$REPOVERSION
+
 function repo2repo {
   docker pull $REPO/"$1":"$2"
   docker tag $REPO/"$1":"$2" localhost:5000/helm-$REPOREVISION/"$1":"$2"
