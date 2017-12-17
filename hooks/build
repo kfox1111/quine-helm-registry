@@ -2,7 +2,7 @@
 
 REPOREVISION=2.7.2
 
-export REGNAME=helm-$REPOVERSION
+export REGNAME=helm-$REPOREVISION/registry
 
 function repo2repo {
   docker pull $REPO/"$1":"$2"
